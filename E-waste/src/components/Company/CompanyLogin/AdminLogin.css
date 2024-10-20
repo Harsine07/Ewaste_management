@@ -1,0 +1,140 @@
+/* New wrapper to hold the login container */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+     /* Optional: Background color for the full view */
+  }
+  
+  /* Updated container to hold both image and login box */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Space between image and form */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 12px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the container */
+    padding: 40px;
+    width:70%; /* Padding inside the container */
+  }
+  
+  /* Image container */
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .background-image {
+    width: 670px; /* Resize the image */
+    height: 680px;
+  }
+  
+  /* Login box */
+  .login-box {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  /* Centering the buttons within the login box */
+  .login-btn, .google-signin-btn {
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 20px auto; /* Center the buttons */
+    width: 100%;
+    max-width: 220px; /* Button width */
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Specific styles for each button */
+  .login-btn {
+    background-color: #156950;
+  }
+  
+  .login-btn:hover {
+    background-color: #45a04995;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-3px); /* Button lift on hover */
+  }
+  
+  .google-signin-btn {
+    background-color: #4285F4;
+  }
+  
+  .google-signin-btn:hover {
+    background-color: #357ae8;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-3px); /* Button lift on hover */
+  }
+  
+  /* Title styling */
+  .login-title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Input field container */
+  .input-field {
+    margin-bottom: 20px;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  
+  .input-control {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .input-control:focus {
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  /* Notification styling */
+  .notification {
+    margin-top: 15px;
+    color: #d9534f;
+    font-weight: bold;
+    transition: opacity 0.3s ease; /* Smooth fade-in for notifications */
+  }
+  .google-signin-btn .FaGoogle,
+  .login-btn .FaLock {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  /* Autofill input color */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+    -webkit-text-fill-color: #333 !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
