@@ -18,7 +18,7 @@ const CompanyLogin = () => {
     // Form validation
     if (email === 'admin@gmail.com' && password === '123') {
       setNotification('Login successful');
-      navigate('/dashboard');
+      navigate('/admin-dashboard');
     } else {
       setNotification('Login failed');
     }
@@ -28,7 +28,7 @@ const CompanyLogin = () => {
     try {
       await signInWithPopup(auth, provider);
       setNotification('Login successful');
-      navigate('/dashboard'); 
+      navigate('/admin-dashboard'); 
     } catch (error) {
       console.error("Google Sign-In Error", error);
       setNotification('Google login failed');
