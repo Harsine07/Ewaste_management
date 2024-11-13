@@ -9,7 +9,11 @@ const RoleSelection = () => {
   };
 
   const handleAdminLogin = () => {
-    navigate('/company-login');
+    navigate('/admin-login');
+  };
+
+  const handleCompanyLogin = () => {
+    navigate('/company-login'); // This route will be for the company login page
   };
 
   return (
@@ -24,7 +28,7 @@ const RoleSelection = () => {
         Select Your Role
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         {/* Customer Login Button */}
         <button
           onClick={handleCustomerLogin}
@@ -40,6 +44,21 @@ const RoleSelection = () => {
           </p>
         </button>
 
+        {/* Admin Login Button */}
+        <button
+          onClick={handleCompanyLogin}
+          className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition duration-300 transform hover:scale-105 flex flex-col items-center"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png"
+            alt="Admin Icon"
+            className="w-16 h-16 mb-4"
+          />
+          <p className="text-lg font-semibold text-gray-800 text-center">
+            Company Login
+          </p>
+        </button>
+
         {/* Company Login Button */}
         <button
           onClick={handleAdminLogin}
@@ -51,7 +70,7 @@ const RoleSelection = () => {
             className="w-16 h-16 mb-4"
           />
           <p className="text-lg font-semibold text-gray-800 text-center">
-            Company Login
+            Admin Login
           </p>
         </button>
       </div>

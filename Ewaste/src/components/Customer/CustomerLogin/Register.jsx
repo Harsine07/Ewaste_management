@@ -31,7 +31,7 @@ const Register = ({ onClose }) => {
   return (
     <div className="registration-form p-4 bg-white rounded-lg shadow-lg">
       
-      <form onSubmit={handleRegister}>
+      <form onSubmit={handleRegister} autoComplete="off">
         <input
           type="text"
           placeholder="Company Name"

@@ -33,7 +33,7 @@ const CustomerDashboard = () => {
         {/* View Orders */}
         <div
           className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 cursor-pointer"
-          onClick={() => handleNavigate('/view-orders')}
+          onClick={() => handleNavigate('/order-status')}
         >
           <FaShoppingCart className="w-16 h-16 text-blue-600 mb-4" />
           <h2 className="text-xl font-semibold text-gray-800">View Orders</h2>
@@ -42,7 +42,7 @@ const CustomerDashboard = () => {
         {/* View Database */}
         <div
           className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 cursor-pointer"
-          onClick={() => handleNavigate('/view-database')}
+          onClick={() => handleNavigate('/completed-order')}
         >
           <FaDatabase className="w-16 h-16 text-blue-600 mb-4" />
           <h2 className="text-xl font-semibold text-gray-800">View Database</h2>
