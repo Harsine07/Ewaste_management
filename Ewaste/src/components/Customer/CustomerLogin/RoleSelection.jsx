@@ -55,7 +55,7 @@ const RoleSelection = () => {
             className="w-16 h-16 mb-4"
           />
           <p className="text-lg font-semibold text-gray-800 text-center">
-            Company Login
+            Agent Login
           </p>
         </button>
 
