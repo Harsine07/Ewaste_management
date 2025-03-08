@@ -104,6 +104,7 @@ router.get('/assigned-orders/agent/:agentId', async (req, res) => {
 // Assign an order to an agent
 router.post('/assign-order', async (req, res) => {
   const { orderId, agentId, agentName } = req.body;
+  console.log('Received data:', req.body);
 
   if (!orderId || !agentId || !agentName) {
     return res.status(400).json({ success: false, message: 'Missing required fields' });

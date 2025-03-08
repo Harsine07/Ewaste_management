@@ -13,7 +13,7 @@ router.post('/add-agent', async (req, res) => {
   const { agentId, name, gender, age, email, phone, doj } = req.body;
 
   // Log the incoming request for debugging
-  console.log('Received data:', req.body);
+  
 
   // Validate required fields
   if (!agentId || !name || !gender || !age || !email || !phone || !doj) {
