@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 const AddAgent = () => {
   const navigate = useNavigate(); // hook to navigate programmatically
@@ -28,7 +27,7 @@ const AddAgent = () => {
 
     try {
       // Send the new agent data to the backend
-      const response = await axios.post(`${API_BASE_URL}/api/agents/add-agent`, newAgent);
+      const response = await axios.post('http://localhost:5000/api/agents/add-agent', newAgent);
       
       // On success, navigate to the agent list page (or another page as needed)
       console.log('Agent added:', response.data.agent);
