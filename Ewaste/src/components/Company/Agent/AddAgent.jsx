@@ -28,7 +28,7 @@ const AddAgent = () => {
 
     try {
       // Send the new agent data to the backend
-      const response = await axios.post('${API_BASE_URL}/api/agents/add-agent', newAgent);
+      const response = await axios.post(`${API_BASE_URL}/api/agents/add-agent`, newAgent);
       
       // On success, navigate to the agent list page (or another page as needed)
       console.log('Agent added:', response.data.agent);
